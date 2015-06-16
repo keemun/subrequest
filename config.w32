@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("subrequest", "for subrequest support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("subrequest", "enable subrequest support", "no");
+
+if (PHP_SUBREQUEST != "no") {
+	EXTENSION("subrequest", "subrequest.c");
+}
+
